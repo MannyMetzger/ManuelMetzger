@@ -1,0 +1,87 @@
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mainPicture {
+    width: 450px;
+    border-radius: 2%;
+}
+
+/* Navigation bar section */
+#navBar {
+    background-color: #333;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+/*main*/
+#mainPageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+/*footer*/
+#footerManny {
+    background-color: #EEEEEE;
+}
+
+/* Style for footer icons */
+#footerManny .fa-instagram, #footerManny .fa-linkedin {
+    font-size: 1.5rem; /* Adjust the size */
+    color: #6c757d; /* Default color */
+}
+
+#footerManny .fa-instagram:hover {
+    color: #C13584; /* Instagram brand color on hover */
+}
+
+#footerManny .fa-linkedin:hover {
+    color: #0A66C2; /* LinkedIn brand color on hover */
+}
+
+
+/* Hobbies Section Styling */
+.container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #555;
+}
+
+
+/*https://colorhunt.co/palette/f4f4f2e8e8e8bbbfca495464*/
+
