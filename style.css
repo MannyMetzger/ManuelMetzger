@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #ffffff;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navBar {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0; /* Adds more breathing room */
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #222;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #6d8297;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Profile Picture */
+#profile-pic {
+    width: 300px; /* Adjust based on actual image size */
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+/* General Section Spacing */
+section {
+    padding: 100px 20px; /* Adds space between sections */
+}
+
+/* Section Divider */
+.section-divider {
+    height: 2px;
+    background: #6d8297; /* Matches button colors */
+    opacity: 0.6; /* Visible but not too harsh */
+    margin: 80px auto; /* Adds spacing */
+    width: 60%; /* Keeps it centered */
+    display: block; /* Ensures it is visible */
+}
+
+/* About Me Styling */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* More spacing between lines */
+    color: #333;
+    margin-bottom: 20px; /* More space between paragraphs */
+}
+
+#about p:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Hobbies Section */
+#hobbies {
+    text-align: center;
+}
+
+#hobbies i {
+    color: #555;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+#hobbies i:hover {
+    color: #6d8297;
+}
+
+/* Projects Section */
+.project-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Adds space between the screenshot and text */
+}
+
+/* Project Screenshot */
+.project-thumbnail {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Information */
+.project-info {
+    max-width: 450px;
+    text-align: left;
+}
+
+.project-info h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between title & description */
+}
+
+.project-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Primary Buttons (Updated to #6d8297) */
+.btn-primary, .btn-dark {
+    background-color: #6d8297 !important;
+    border-color: #6d8297 !important;
+    color: #fff !important;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover, .btn-dark:hover {
+    background-color: #5b6f86 !important; /* Slightly darker on hover */
+    border-color: #5b6f86 !important;
+    transform: translateY(-2px); /* Adds a subtle lift effect */
+}
+
+/* Footer Social Icons */
+#footerManny a {
+    color: #6d8297 !important; /* Match button color */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#footerManny a:hover {
+    color: #5b6f86 !important; /* Slightly darker on hover */
+    transform: scale(1.1); /* Adds a subtle hover effect */
+}
+
+/* Contact Section */
+#contact .btn {
+    margin: 10px;
+}
+
+/* Footer */
+#footerManny {
+    background: #f8f9fa;
+    color: #222;
+    padding: 30px 0; /* Adds space so it doesn't feel cramped */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust hero section for smaller screens */
+    #hero {
+        padding-top: 120px;
+    }
+
+    /* Scale down profile picture */
+    #profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Center project info in small screens */
+    .project-preview {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-thumbnail {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .project-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Ensure proper spacing for sections */
+    section {
+        padding: 80px 15px;
+    }
+
+    /* Make sure section dividers are visible on mobile */
+    .section-divider {
+        width: 80%; /* Slightly wider on smaller screens */
+        opacity: 0.8; /* More visible on mobile */
+    }
+}
